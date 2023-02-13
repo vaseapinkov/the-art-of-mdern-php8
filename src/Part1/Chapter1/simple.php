@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Book\Part1\Chapter1\Simple;
+namespace Book\Part1\Chapter1;
 
 use Book\Part1\Chapter1\Simple\SimpleClass;
 
