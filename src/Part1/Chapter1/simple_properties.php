@@ -1,10 +1,8 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Book\Part1\Chapter1\Simple;
-
-use Book\Part1\Chapter1\Simple\SimplePropertyAssignment;
 
 require __DIR__ . '/../../../vendor/autoload.php';
 

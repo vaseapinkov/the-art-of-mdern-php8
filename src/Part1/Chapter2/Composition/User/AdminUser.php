@@ -3,8 +3,6 @@
 namespace Book\Part1\Chapter2\Composition\User;
 
 use Book\Part1\Chapter2\Composition\AdminPermission\AdminPermissionInterface;
-use Book\Part1\Chapter2\Composition\User\UserData;
-use Book\Part1\Chapter2\Composition\User\UserInterface;
 
 final class AdminUser implements UserInterface
 {
@@ -14,8 +12,7 @@ final class AdminUser implements UserInterface
     public function __construct(
         private readonly UserData $userData,
         AdminPermissionInterface  ...$permissions
-    )
-    {
+    ) {
         \array_map(
             callback: function (AdminPermissionInterface $perm): void {
                 $this->permissions[$perm->getPermName()] = $perm;

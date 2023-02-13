@@ -1,12 +1,12 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Book\Part1\Chapter2;
 
+use Book\Part1\Chapter2\ForceInheritance\AdminPermission;
 use Book\Part1\Chapter2\ForceInheritance\AdminUser;
 use Book\Part1\Chapter2\ForceInheritance\FrontEndUser;
-use Book\Part1\Chapter2\ForceInheritance\AdminPermission;
 
 require __DIR__ . '/../../../vendor/autoload.php';
 
@@ -23,7 +23,6 @@ $adminUser = new AdminUser(
     1,
     'Joseph',
     new class () extends AdminPermission {
-
         public function getPermName(): string
         {
             return self::CAN_VIEW;
@@ -35,7 +34,6 @@ $adminUser = new AdminUser(
         }
     },
     new class () extends AdminPermission {
-
         public function getPermName(): string
         {
             return self::CAN_EDIT;

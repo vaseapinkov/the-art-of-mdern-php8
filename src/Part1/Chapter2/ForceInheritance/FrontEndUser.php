@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Book\Part1\Chapter2\ForceInheritance;
@@ -8,7 +9,6 @@ namespace Book\Part1\Chapter2\ForceInheritance;
  */
 final class FrontEndUser extends AbstractUser
 {
-
     /** @var string[] */
     private array $recentlyViewedPages;
 
@@ -16,8 +16,7 @@ final class FrontEndUser extends AbstractUser
         protected int $id,
         protected string                                        $name,
         string           ...$recentlyViewedPages
-    )
-    {
+    ) {
         parent::__construct($id, $name);
         $this->recentlyViewedPages = $recentlyViewedPages;
     }
@@ -30,6 +29,5 @@ final class FrontEndUser extends AbstractUser
                     front end user {$this->name} ({$this->id}) has recently viewed:
                     $viewed
                 STRING;
-
     }
 }

@@ -11,8 +11,7 @@ final class UserFrontEnd implements UserInterface
     public function __construct(
         private readonly UserData $userData,
         private readonly UrlCollection $recentlyViewedPages
-    )
-    {
+    ) {
     }
 
 

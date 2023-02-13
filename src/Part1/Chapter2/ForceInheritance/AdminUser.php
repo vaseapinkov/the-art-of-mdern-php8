@@ -11,8 +11,7 @@ final class AdminUser extends AbstractUser
         protected int    $id,
         protected string $name,
         AdminPermission  ...$permissions
-    )
-    {
+    ) {
         parent::__construct($id, $name);
         \array_map(
             callback: function (AdminPermission $perm): void {

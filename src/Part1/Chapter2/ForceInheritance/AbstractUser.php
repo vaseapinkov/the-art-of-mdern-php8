@@ -10,8 +10,7 @@ abstract class AbstractUser extends Person
     public function __construct(
         protected int $id,
         protected string $name
-    )
-    {
+    ) {
         parent::__construct($name);
     }
 

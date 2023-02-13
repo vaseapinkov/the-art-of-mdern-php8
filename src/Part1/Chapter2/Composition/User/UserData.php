@@ -11,8 +11,7 @@ class UserData
     public function __construct(
         private readonly int $id,
         private readonly Person $person
-    )
-    {
+    ) {
     }
 
     public function getId(): int

@@ -6,8 +6,7 @@ final class CanEditPermission implements AdminPermissionInterface
 {
     public function __construct(
         private readonly bool $allowed
-    )
-    {
+    ) {
     }
 
     public function getPermName(): string
